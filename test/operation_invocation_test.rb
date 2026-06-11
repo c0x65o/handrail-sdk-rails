@@ -6,6 +6,8 @@ require "json"
 require "minitest/autorun"
 require "openssl"
 
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+
 require "handrail/sdk/rails"
 
 class OperationInvocationTest < Minitest::Test
